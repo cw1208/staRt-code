@@ -10,18 +10,18 @@
 */
 
 * {
-        margin: 0;
-        padding: 0;
-        outline: none;
-        
-        /*Border Box*/
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-         
-         /* This treats padding and borders differently from the traditional box model, which adds to a defined width.
+    margin: 0;
+    padding: 0;
+    outline: none;
     
-         In border-box, all margin and padding stays w/in your defined width. In other words, if you define a width as 25%, it stays at 25%. Normally that would be 25% + padding + border.
+    /*Border Box*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+     
+     /* This treats padding and borders differently from the traditional box model, which adds to a defined width.
+
+     In border-box, all margin and padding stays w/in your defined width. In other words, if you define a width as 25%, it stays at 25%. Normally that would be 25% + padding + border.
          */
 }
 
@@ -52,7 +52,6 @@ body {
     height: 768px;
     margin: 0 auto;
     border: 1px solid red;
-    
 }
 
 
