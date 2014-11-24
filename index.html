@@ -9,8 +9,8 @@
         <!-- =======================
             WEBAPP-SPECIFIC METAs -->
             
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-            <!-- This tells the the iPad to render all of the HTML and graphics at a 1:1 ratio, which basically disables the pinching capability. -->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            This tells the the iPad to render all of the HTML and graphics at a 1:1 ratio, which basically disables the pinching capability. -->
             
         <meta name="apple-mobile-web-app-capable" content="yes" />
             <!-- This allows the code to be saved as a webApp w/ a built-in instance of mobile safari (and not just a bookmark to open in mobile safari) when someone selects 'Add to Homescreen.' -->
@@ -18,22 +18,25 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
             <!-- This styles the status bar. Default = dark gray. We can change it back to default, I just wanted to note that this is possible. -->
                 
-        <link type="text/css" rel="apple-touch-icon-precomposed" href="assets/images/icon.png?v=1" />
-            <!-- Linked icon. 'Precomposed' tells the iPad not to add reflection. You can't escape the rounded corners, however, its an automatic filter. -->
-                
-        <link type="text/css" rel="apple-touch-startup-image" href="assets/images/startup_landscape.jpg?v=1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
-                <!-- CSS w/ media query for landscape startup image, IF NEEDED.-->
-                
-        <link type="text/css" rel="apple-touch-startup-image" href="assets/images/startup_portrait.jpg?v=1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-                <!-- CSS w/ media query for portrait startup image, IF NEEDED.-->
-                
+        <link type="text/css" rel="apple-touch-icon-precomposed" href="assets/images/icon.png" />
+        <!-- Linked icon. 'Precomposed' tells the iPad not to add reflection. You can't escape the rounded corners, however, its an automatic filter. -->
+        
+        <link type="text/css" rel="apple-touch-startup-image" href="assets/images/startup_landscape.jpg" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+        <!-- CSS w/ media query for landscape startup image, IF NEEDED.-->
+        
+        <link type="text/css" rel="apple-touch-startup-image" href="assets/images/startup_portrait.jpg" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+        <!-- CSS w/ media query for portrait startup image, IF NEEDED.-->
+        
         
         <!-- =============
             STYLESHEETS -->
 
-        <link href="css/arT.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
-            
+        <link href="css/arT.css" rel="stylesheet" type="text/css">
+        
+        <style>
+            @import url("/css/arT.css");
+        </style>
         
         <!-- 
             <link href="css/bootstrap.css" rel="stylesheet">
