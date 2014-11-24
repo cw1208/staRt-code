@@ -31,7 +31,9 @@
         <!-- =============
             STYLESHEETS -->
 
-        <link href="arT.css" rel="stylesheet">
+        <link href="css/arT.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+            
         
         <!-- 
             <link href="css/bootstrap.css" rel="stylesheet">
@@ -46,58 +48,77 @@
     <body>
         <div id="container">
             
-            <div id="statusBar"></div>
+            <div id="statusBar">Placeholder for iPad status bar.</div>
+            
+            <!-- 
+             ==================
+                Start TOP BAR
+             ================== -->
+            
+            <div id="top">
+                <a href="index.html">
+                    <div class="topIconHolder" style="float:left">
+                        <img class="topIcon" src="assets/icons/logo.svg" alt="staRt logo">
+                        <span class="topIconText" style="font-size:1.2em;">StaRt</span>
+                    </div>
+                </a><!-- END LogoButton -->
+                
+                <div id="titleBox">
+                    <h1>THIS IS THE WELCOME PAGE
+                    </h1>
+                </div>
+                
+               <a href="#.html">
+                   <div class="topIconHolder" style="float:right">
+                        <img class="topIcon" src="assets/icons/user.svg" alt="user icon">
+                            <span class="topIconText">Progress</span>
+                    </div>
+               </a><!-- END ProgressButton-->
+               
+            
+            </div>  <!--
+             ==================
+             End TOP BAR
+             ================== -->
+            
+            
             <nav id="left">
                 <div class="iconHolder">
                     <a href="#.html">
-                        <div class="icon" id="practice">
-                            <span class="iconText">Practice</span>
+                        <div class="icon" id="plan">
+                            <span class="iconText">Plan</span>
                         </div> <!-- end icon -->
                     </a>
-                </div> <!-- end practice iconHolder -->
+                </div> <!-- END Plan iconHolder -->
                 
                 
                 <div class="iconHolder">
-                    <a href="#.html">
-                        <div class="icon" id="profile">
-                            <span class="iconText">Profile</span>
-                        </div> <!-- end icon -->
-                    </a>
-                </div> <!-- end practice iconHolder -->
-                
-                <div class="iconHolder">
-                    <a style="display:block" href="#.html">
-                        <div class="icon" id="progress">
-                            <span class="iconText">Progress</span>
-                        </div> <!-- end icon -->
-                    </a>
-                </div> <!-- end practice iconHolder -->
-                
-                <div class="iconHolder">
-                    <a style="display:block" href="#.html">
+                    <a href="01tutorial.html">
                         <div class="icon" id="tutorial">
                             <span class="iconText">Tutorial</span>
                         </div> <!-- end icon -->
                     </a>
-                </div> <!-- end practice iconHolder -->
+                </div> <!-- END Tutorial iconHolder -->
                 
+                <div class="iconHolder">
+                    <div id="pract">
+                        <a href="02PracticeSyllable.html">Syllable </a><a href="02PracticeWord.html">Word</a><a href="02PracticeFree.html">Free </a><a href="02PracticeAuto.html"> Auto</a>
+                    </div>
+                    <a style="display:block" href="#.html">
+                        <div class="icon" id="practice">
+                            <span class="iconText">Practice</span>
+                        </div> <!-- end icon -->
+                    </a>
+                </div> <!-- END Practice iconHolder -->
                 
                 <div class="iconHolder">
                     <a style="display:block" href="#.html">
-                        <div class="icon" id="schedule">
-                            <span class="iconText">Schedule</span>
+                        <div class="icon" id="profiles">
+                            <span class="iconText">Profiles</span>
                         </div> <!-- end icon -->
                     </a>
-                </div> <!-- end practice iconHolder -->
+                </div> <!-- END Profiles iconHolder -->
                 
-                
-                <div class="iconHolder">
-                    <a style="display:block" href="#.html">
-                        <div class="icon" id="resources">
-                            <span class="iconText">Resources</span>
-                        </div> <!-- end icon -->
-                    </a>
-                </div> <!-- end practice iconHolder -->
                 
                 <div class="iconHolder">
                     <a style="display:block" href="#.html">
@@ -105,34 +126,36 @@
                             <span class="iconText">Settings</span>
                         </div> <!-- end icon -->
                     </a>
-                </div> <!-- end practice iconHolder -->
+                </div> <!-- END Settings iconHolder -->
                 
             </nav> <!-- END nav Left -->
             
-            <nav id="top">
-                <div class="tabSelect"><span>Syllable Practice<span></div>
-                <div>Word Practice</div>
-                <div>Free Practice</div>
-            </nav>
-            
             <main>
-                <div class="content_container">
-                    <div class="content_loader"><!-- HTML pages loaded here from content folder -->
-                    </div><!-- END Content Loader -->
-                    <h1>the left navbar is working... <br>
-                        the rest is a work in progress...</h1>
+                <div id="contentContainer">
+                        <div id="subTitleBox">
+                            <p style="font-weight:bold">This is an area for a brief description of the activies on this page.</p>
+                            <p>Lorem ipsum dolor sit amet, eleifend aenean quam elementum erat, consectetuer turpis felis est bibendum. Consectetuer quis lacus scelerisque aliquam, mauris non ligula, posuere neque aliquam. Sodales cras ultrices mauris aliquet turpis, accumsan litora quisque nibh.
+                            </p>
+                        </div> <!-- END subTitleBox -->
+                    
+                    <div id="lpc"><!-- LPC goes here -->
+                        <h2 style="margin-top:150px">LPC or video object goes here</h2>
+                    </div>
+                    
+                    <div id="steps"> <!-- Breadcrumbs-->
+                        ----- Lesson breadcumbs/steps will go below this line -----
+                    </div>
+                    
                 </div> <!-- END Content Container -->
                 
             </main><!-- END Main -->
             
             <footer></footer>
-        
-
     
         <!-- -=======================
          Scripts to load, IF NEEDED
         <script src = "js/jquery-2.1.1.js"></script>
-        <script src = "js/bootstrap.js"></script> <!--bootstrap.js is dependent on jquery -->
+        <script src = "js/bootstrap.js"></script> <!- - bootstrap.js is dependent on jquery -->
     
         </div> <!-- END Container -->
     </body>

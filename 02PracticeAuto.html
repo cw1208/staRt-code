@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+    <head>
+        <title>staRt</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        
+        <!-- =======================
+            WEBAPP-SPECIFIC METAs -->
+            
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            <!-- This tells the the iPad to render all of the HTML and graphics at a 1:1 ratio, which basically disables the pinching capability. -->
+            
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+            <!-- This allows the code to be saved as a webApp w/ a built-in instance of mobile safari (and not just a bookmark to open in mobile safari) when someone selects 'Add to Homescreen.' -->
+            
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <!-- This styles the status bar. Default = dark gray. We can change it back to default, I just wanted to note that this is possible. -->
+                
+        <link type="text/css" rel="apple-touch-icon-precomposed" href="assets/images/icon.png" />
+            <!-- Linked icon. 'Precomposed' tells the iPad not to add reflection. You can't escape the rounded corners, however, its an automatic filter. -->
+                
+        <link type="text/css" rel="apple-touch-startup-image" href="assets/images/startup_landscape.jpg?v=1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+                <!-- CSS w/ media query for landscape startup image, IF NEEDED.-->
+                
+        <link type="text/css" rel="apple-touch-startup-image" href="assets/images/startup_portrait.jpg" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+                <!-- CSS w/ media query for portrait startup image, IF NEEDED.-->
+                
+        
+        <!-- =============
+            STYLESHEETS -->
+
+        <link href="css/arT.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+            
+        
+        <!-- 
+            <link href="css/bootstrap.css" rel="stylesheet">
+               This is looks like a nice stylesheet, but I need to learn how to use it first.
+         -->
+            
+        <script src="js/respond.min.js"></script>
+            <!-- necessary to run js scripts in outdated IE browsers (EI8 or earlier) -->
+
+    </head>
+    
+    <body>
+        <div id="container">
+            
+            <div id="statusBar">Placeholder for iPad status bar.</div>
+            
+            <!-- 
+             ==================
+                Start TOP BAR
+             ================== -->
+            
+            <div id="top">
+                <a href="index.html">
+                    <div class="topIconHolder" style="float:left">
+                        <img class="topIcon" src="assets/icons/logo.svg" alt="staRt logo">
+                        <span class="topIconText" style="font-size:1.2em;">StaRt</span>
+                    </div>
+                </a><!-- END LogoButton -->
+                
+                <div id="titleBox">
+                    <h1>AUTO-SESSION: STEP #1
+                    </h1>
+                </div>
+                
+               <a href="#.html">
+                   <div class="topIconHolder" style="float:right">
+                        <img class="topIcon" src="assets/icons/user.svg" alt="user icon">
+                            <span class="topIconText">Progress</span>
+                    </div>
+               </a><!-- END ProgressButton-->
+               
+            
+            </div>  <!--
+             ==================
+             End TOP BAR
+             ================== -->
+            
+            
+            <nav id="left">
+                <div class="iconHolder">
+                    <a href="#.html">
+                        <div class="icon" id="plan">
+                            <span class="iconText">Plan</span>
+                        </div> <!-- end icon -->
+                    </a>
+                </div> <!-- END Plan iconHolder -->
+                
+                
+                <div class="iconHolder">
+                    <a href="01tutorial.html">
+                        <div class="icon" id="tutorial">
+                            <span class="iconText">Tutorial</span>
+                        </div> <!-- end icon -->
+                    </a>
+                </div> <!-- END Tutorial iconHolder -->
+                
+                <div class="iconHolder">
+                    <div id="pract">
+                        <a href="02PracticeSyllable.html">Syllable </a><a href="02PracticeWord.html">Word</a><a href="02PracticeFree.html">Free </a><a href="02PracticeAuto.html"> Auto</a>
+                    </div>
+                    <a style="display:block" href="#.html">
+                        <div class="icon" id="practice">
+                            <span class="iconText">Practice</span>
+                        </div> <!-- end icon -->
+                    </a>
+                </div> <!-- END Practice iconHolder -->
+                
+                <div class="iconHolder">
+                    <a style="display:block" href="#.html">
+                        <div class="icon" id="profiles">
+                            <span class="iconText">Profiles</span>
+                        </div> <!-- end icon -->
+                    </a>
+                </div> <!-- END Profiles iconHolder -->
+                
+                
+                <div class="iconHolder">
+                    <a style="display:block" href="#.html">
+                        <div class="icon" id="settings">
+                            <span class="iconText">Settings</span>
+                        </div> <!-- end icon -->
+                    </a>
+                </div> <!-- END Settings iconHolder -->
+                
+            </nav> <!-- END nav Left -->
+            
+            <main>
+                <div id="contentContainer">
+                    <div id="subTitleBox">
+                        <p style="font-weight:bold">This is an area for a brief description of the activies on this page.</p>
+                        <p style="font-weight:bold">Below I've placed a video file for test purposes only.</p>
+                        <p>And here's some more text...Lorem ipsum dolor sit amet, eleifend aenean quam elementum erat, consectetuer turpis felis est bibendum.
+                        </p>
+                    </div> <!-- END subTitleBox -->
+                    
+                    <div id="video">
+                        <video src="assets/video/01-tut2.mov" width="700" height="400" controls autoplay></video>
+                    </div>
+                    
+                    <div id="steps"> <!-- Breadcrumbs-->
+                        ----- Lesson breadcumbs/steps will go below this line -----
+                    </div>
+                    
+                </div> <!-- END Content Container -->
+                
+            </main><!-- END Main -->
+            
+            <footer></footer>
+    
+        <!-- -=======================
+         Scripts to load, IF NEEDED
+        <script src = "js/jquery-2.1.1.js"></script>
+        <script src = "js/bootstrap.js"></script> <!- - bootstrap.js is dependent on jquery -->
+    
+        </div> <!-- END Container -->
+    </body>
+</html>

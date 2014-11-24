@@ -1,0 +1,286 @@
+/*!
+ * CSS developed for the arT Biofeedback Project, DAT Fall 2014
+ * NYU School of Engineering
+ */
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* This is a nice CSS reset, retrieved from: http://meyerweb.com/eric/tools/css/reset/
+    If needed, we should implement this one.
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+    /*Border Box*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+     
+     /* This treats padding and borders differently from the traditional box model, which adds to a defined width.
+
+     In border-box, all margin and padding stays w/in your defined width. In other words, if you define a width as 25%, it stays at 25%. Normally that would be 25% + padding + border.
+         'Quicksand',
+      */
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto; /* turn this off for live version */
+    background-color: rgb(58,58,58);
+}
+
+#container {
+    position: relative;
+    background-color: white;
+    color: #3C3D3B;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    /*Text-rendering allows the browser to choose quality of text over speed of render, making your text look nicer.*/
+    
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    /* border: 1px solid red;*/
+}
+
+
+#statusBar {
+    height: 20px;
+    background-color: rgb(58,58,58);
+    display: block;
+    clear: both;
+    color: white;
+    font-size: .6em;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+h1 {
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+p {
+    margin-top: 7px;
+}
+
+/* =====================================================================
+ TOP NAV
+ ===================================================================== */
+
+#top {
+    height: 200px;
+    width: 1020px;
+    clear: both;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    /*: 1px solid pink;*/
+}
+
+.topIconHolder {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #FFF1D5;
+    box-shadow: 0 0 2px rgba(0,0,0,.15);
+    text-align: center;
+    height: 178px;
+    width: 128px;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    position: relative;
+    /*border: 1px solid green;*/
+}
+
+.topIcon {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    /*border: 1px solid pink;*/
+}
+
+.topIconText {
+    position: relative;
+    top: 10px;
+    color: #E08626;
+    font-weight: 800;
+    font-size: 1.1em;
+    /*border: 1px solid blue;*/
+}
+
+#titleBox {
+    height: 100px;
+    width: 764px;
+    float: left;
+    /*border: 1px solid pink;*/
+}
+
+/* =====================================================================
+    NAVBAR LEFT
+ ===================================================================== */
+
+#pract {
+    position: absolute;
+    top: 15px;
+    width: 105px;
+    font-weight: bold;
+    font-size: .7em; /* REMOVE once links have been removed */
+    text-align: center;
+    /*border: 1px solid red;*/
+    
+}
+
+nav#left {
+    position: absolute;
+    top: 200px;
+    width: 128px;
+    padding-top: 0px;
+    margin-left: 2px;
+    font-size: .75em;
+    display: block;
+    z-index: 10;
+    /*float: left;*/
+}
+
+
+.iconHolder {
+    height: 113px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #FFF1D5;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0,0,0,.15);
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    position: relative;
+    /*border: 1px solid pink;*/
+
+}
+
+div.iconHolder a {
+    display: block;
+    /*border: 1px solid pink;*/
+}
+
+/*
+:hover.iconHolder {
+    background-color: #FAFAFA;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    z-index: 1;
+    border: 1px solid #E6E7E8;
+}
+ */
+
+
+.icon {
+    height: 65px;
+    width: 95px;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /*border: 1px solid green;*/
+}
+
+.iconText {
+    position: relative;
+    top: 70px;
+    color: #E08626;
+    font-weight: 800;
+    /*border: 1px solid blue;*/
+    
+}
+
+.icon#plan {background-image: url("../assets/icons/plan.svg");}
+.icon#tutorial {background-image: url("../assets/icons/tutorial.svg");}
+.icon#practice {background-image: url("../assets/icons/practice.svg");}
+.icon#profiles {background-image: url("../assets/icons/profile.svg");}
+.icon#resources {background-image: url("../assets/icons/resources0.svg");}
+.icon#settings {background-image: url("../assets/icons/settings.svg");}
+
+
+/* =====================================================================
+ CONTENT CONTAINER
+ ===================================================================== */
+
+#contentContainer {
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    padding: 0px;
+    width: 1024px;
+    height: 648px;
+    /*border: 1px solid blue;*/
+}
+
+
+#subTitleBox {
+    position: relative;
+    left: 75px;
+    width: 874px;
+    height: 115px;
+    padding: 10px 100px 0px 100px;
+    font-size: .8em;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    /*border: 1px solid pink;*/
+}
+
+#lpc {
+    position: absolute;
+    left: 152px;
+    top: 115px;
+    width: 700px;
+    height: 400px;
+    padding-top: 0px;
+    text-align: center;
+    color: #a7dbd7;
+    border: 5px solid #018b9d;
+}
+
+#video {
+    position: absolute;
+    left: 162px;
+    top: 115px;
+    width: 700px;
+    height: 400px;
+    padding-top: 0px;
+    text-align: center;
+    color: #a7dbd7;
+    /*border: 1px solid greenyellow;*/
+}
+
+#steps {
+    position: relative;
+    top: 417px;
+    left: 0px;
+    width: 1022px;
+    height: 117px;
+    text-align: center;
+    font-size: .8em;
+    font-family: 'Helvetica Neue', sans-serif;
+    /*border: 1px solid pink;*/
+}
+
+
+
+
+
+
