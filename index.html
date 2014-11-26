@@ -55,24 +55,20 @@
              ================== -->
             
             <div id="top">
-                <a href="index.html">
-                    <div class="topIconHolder" style="float:left">
+                <div class="topIconHolder" id="logoBtn">
                         <img class="topIcon" src="assets/icons/logo.svg" alt="staRt logo">
                         <span class="topIconText" style="font-size:1.2em;">StaRt</span>
-                    </div>
-                </a><!-- END LogoButton -->
+                </div> <!-- END LogoButton -->
                 
                 <div id="titleBox">
                     <h1>THIS IS THE WELCOME PAGE
                     </h1>
                 </div>
                 
-               <a href="#.html">
-                   <div class="topIconHolder" style="float:right">
-                        <img class="topIcon" src="assets/icons/user.svg" alt="user icon">
-                            <span class="topIconText">Progress</span>
-                    </div>
-               </a><!-- END ProgressButton-->
+                <div class="topIconHolder" id="userBtn">
+                    <img class="topIcon" src="assets/icons/user.svg" alt="user icon">
+                    <span class="topIconText">Progress</span>
+                </div> <!-- END ProgressButton-->
                
             
             </div>  <!--
@@ -152,9 +148,18 @@
             <footer></footer>
     
         <!-- -=======================
-         Scripts to load, IF NEEDED
+         Scripts to load, IF NEEDED -->
         <script src = "js/jquery-2.1.1.js"></script>
-        <script src = "js/bootstrap.js"></script> <!- - bootstrap.js is dependent on jquery -->
+        <script type="text/javascript" src="js/dat.js"></script>
+        <!-- <script src = "js/bootstrap.js"></script>  (bootstrap.js is dependent on jquery) -->
+
+        <script type="text/javascript">
+            $(function() {
+                $("#logoBtn").click(function() {
+                    $("nav#left").slideToggle(1000);
+                });
+            });
+        </script>
     
         </div> <!-- END Container -->
     </body>

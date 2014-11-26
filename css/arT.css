@@ -1,5 +1,5 @@
 /*!
- * CSS developed for the arT Biofeedback Project, DAT Fall 2014
+ * CSS developed for the staRt Biofeedback Project, DAT Fall 2014
  * NYU School of Engineering
  */
 
@@ -36,6 +36,7 @@ body {
     min-height: 100%;
     margin: 0 auto; /* turn this off for live version */
     background-color: rgb(58,58,58);
+    overflow-x: hidden; 
 }
 
 #container {
@@ -57,7 +58,11 @@ body {
 
 
 #statusBar {
-    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 23px;
+    width: 1024px;
     background-color: rgb(58,58,58);
     display: block;
     clear: both;
@@ -66,6 +71,8 @@ body {
     padding-left: 5px;
     padding-top: 3px;
     font-weight: bold;
+    border-bottom: 3px solid white;
+    z-index: 9;
 }
 
 h1 {
@@ -87,7 +94,7 @@ p {
     height: 200px;
     width: 1020px;
     clear: both;
-    margin-top: 2px;
+    margin-top: 0px;
     margin-left: 2px;
     margin-right: 2px;
     /*: 1px solid pink;*/
@@ -99,12 +106,30 @@ p {
     background-color: #FFF1D5;
     box-shadow: 0 0 2px rgba(0,0,0,.15);
     text-align: center;
-    height: 178px;
-    width: 128px;
     border-bottom: 1px solid #DDDDDD;
     border-right: 1px solid #DDDDDD;
     position: relative;
     /*border: 1px solid green;*/
+}
+
+#logoBtn {
+    z-index: 10;
+    position: absolute;
+    display: inline;
+    top: 22px;
+    left: 0px;
+    height: 178px;
+    width: 128px;
+}
+
+#userBtn {
+    z-index: 10;
+    position: absolute;
+    display: inline;
+    top: 22px;
+    right: 0px;
+    height: 178px;
+    width: 128px;
 }
 
 .topIcon {
@@ -124,9 +149,12 @@ p {
 }
 
 #titleBox {
+    position: absolute;
+    display: inline;
+    left: 129px;
+    top: 20px;
     height: 100px;
     width: 764px;
-    float: left;
     /*border: 1px solid pink;*/
 }
 
@@ -153,7 +181,7 @@ nav#left {
     margin-left: 2px;
     font-size: .75em;
     display: block;
-    z-index: 10;
+    z-index: 8;
     /*float: left;*/
 }
 
