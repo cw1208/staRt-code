@@ -1,0 +1,7 @@
+11/26
+
+took out all css floats and went with absolute positioning
+
+made Logo and User buttons
+
+I wrote the left nav as individual buttons instead of a ul. Should I make it a ul/li like regular nav? Is there any disadvantage to keeping it as is?
