@@ -176,13 +176,15 @@ p {
 nav#left {
     position: absolute;
     top: 200px;
+    /*display: none;
+    /*top: -300px;*/
     width: 128px;
     padding-top: 0px;
-    margin-left: 2px;
+    margin-left: 0px;
     font-size: .75em;
     display: block;
     z-index: 8;
-    /*float: left;*/
+    /*border: 1px solid pink;*/
 }
 
 
@@ -197,7 +199,8 @@ nav#left {
     border-bottom: 1px solid #DDDDDD;
     border-right: 1px solid #DDDDDD;
     position: relative;
-    /*border: 1px solid pink;*/
+    /*display:none;
+    border: 1px solid pink;*/
 
 }
 
@@ -307,7 +310,9 @@ div.iconHolder a {
     /*border: 1px solid pink;*/
 }
 
-
+/* =====================================================================
+  PROGRESS PANEL
+ ===================================================================== */
 
 
 
