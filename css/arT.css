@@ -178,7 +178,7 @@ nav#left {
     top: 200px;
     width: 128px;
     padding-top: 0px;
-    margin-left: 0px;
+    margin-left: 2px;
     font-size: .75em;
     display: block;
     z-index: 8;
@@ -205,6 +205,16 @@ div.iconHolder a {
     display: block;
     /*border: 1px solid pink;*/
 }
+
+/*
+:hover.iconHolder {
+    background-color: #FAFAFA;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    z-index: 1;
+    border: 1px solid #E6E7E8;
+}
+ */
+
 
 .icon {
     height: 65px;
