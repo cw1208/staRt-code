@@ -115,7 +115,7 @@ p {
 #logoBtn {
     z-index: 10;
     position: absolute;
-    display: inline;
+    display: none/*inline*/;
     top: 22px;
     left: 0px;
     height: 178px;
