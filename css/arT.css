@@ -115,7 +115,7 @@ p {
 #logoBtn {
     z-index: 10;
     position: absolute;
-    display: none/*inline*/;
+    display: inline;
     top: 22px;
     left: 0px;
     height: 178px;
@@ -182,7 +182,7 @@ nav#left {
     padding-top: 0px;
     margin-left: 0px;
     font-size: .75em;
-    display: block;
+    display: none/*block*/;
     z-index: 8;
     /*border: 1px solid pink;*/
 }
